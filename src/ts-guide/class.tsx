@@ -2,16 +2,16 @@
 
 import * as React from 'react'
 
-type Props = {
+interface IProps {
     label: string
 }
 
-type State = {
+interface IState {
     count: number
 }
 
-export default class ClassCount extends React.Component<Props, State> {
-    readonly state: State = {
+export default class ClassCount extends React.Component<IProps, IState> {
+    readonly state: IState = {
         count: 0,
     }
 
